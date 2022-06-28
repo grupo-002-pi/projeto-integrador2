@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<title>{% block title %} Registrar {% endblock %}</title>
+<br>
+<div class="container" >
+    <div class="jumbotron" style="background-color: #E3E3E3; ">
+
+<h1>Registre sua sugestão</h1>
+<br>
+<br>
+<form method="post">
+
+    <div class="form-group">
+        <label for="title">Assunto (obrigatório):</label>
+        <input type="text" name="title" placeholder="Digite o assunto" class="form-control" value="{{ request.form['title'] }}">
+    </div>
+    <br>
+
+    <div class="form-group">
+        <label for="content">Conteúdo (obrigatório):</label>
+        <textarea name="content" placeholder="Digite sua sugestão" class="form-control">{{ request.form['content'] }}</textarea>
+    </div>
+    <br>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary" style="border-color:#523817">Registrar</button>
+    </div>
+
+
+</div>
+</form>
+</div>
+</div>
+{% endblock %}

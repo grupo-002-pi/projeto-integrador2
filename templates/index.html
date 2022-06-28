@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<title>{% block title %} Home {% endblock %}</title>
+<div class="container" >
+    <div class="jumbotron" style="background-color: #E3E3E3; ">
+        <h1 class="display-4">
+            <style>
+                h1{text-align: center;
+                background-color: #E3E3E3;
+                color: #000000;
+                }
+
+            </style>Seja bem vindo! &#128512 <i class="fa-regular fa-hand-wave"></i></h1>
+        <p></p>
+        <hr class="my-4">
+        <p style="color: #000000;">Este site pode te ajudar com alguns assuntos interessantes e encontrar cursos online gratuitos sobre os temas!</p>
+        <br>
+        <a class="btn btn-primary" style="background-color:#523817; border-color: #523817; margin-left: 500px;" href="sobrenos" role="button">Leia mais</a>
+    </div>
+</div>
+
+
+    <div class="row" >
+        
+            <div class="card" style="background-color: #E3E3E3; border: #E3E3E3;" >
+                <div class="card-body" >
+                    <h5 class="card-title">O que você pode encontrar</h5>
+                    <p class="card-text">Detalhes e dicas interessantes de conteúdo sobre Python:</p>
+                    <br>
+                    <a href="python" class="btn btn-primary" style="border-color: #523817;">Acesse o conteúdo</a>
+                </div>
+            </div>
+        </div>
+    <br>
+    <br>
+    <br>
+
+        <div class="row">
+            <div class="card" style="background-color: #E3E3E3; border: #E3E3E3;">
+                <div class="card-body">
+                    <h5 class="card-title">Deixe sua sugestão</h5>
+                    <p class="card-text">Tem uma sugestão de conteúdo interessante para o site?</p>
+                        <p class="card-text">Registre através do botão abaixo:</p>
+                        <br>
+                    <a href="create" class="btn btn-primary" style="border-color: #523817;">Registrar sugestão</a>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</div>
+<br>
+{% endblock %}

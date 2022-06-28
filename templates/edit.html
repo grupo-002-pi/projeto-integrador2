@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<title>{% block title %} Editar sugestão {% endblock %}</title>
+<br>
+
+<div class="container" >
+    <div class="jumbotron" style="background-color: #E3E3E3; ">
+        <h1 class="display-4">
+            <style>
+                h1{text-align: center;
+                background-color: #E3E3E3;
+                color: #000000;
+                }
+
+            </style>Editar sugestão <i class="fa-regular fa-hand-wave"></i></h1>
+        <p></p>
+        <hr class="my-4">
+        <p style="color: #000000; text-align: center;">Edite ou apague suas sugestões:</p>
+        <br>
+        <br>
+
+<form method="post">
+
+    <div class="form-group">
+        <label for="title">Assunto (obrigatório):</label>
+        <input type="text" name="title" placeholder="Digite o assunto" class="form-control"
+               value="{{ request.form['title'] or questions['title'] }}">
+    </div>
+
+    <div class="form-group">
+        <label for="content">Sugestão (obrigatório):</label>
+        <textarea name="content" placeholder="Digite sua sugestão" class="form-control">
+            {{ request.form['content'] or questions['content'] }}</textarea>
+    </div>
+
+    <br>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary" style="border-color:#523817">Salvar</button>
+    </div>
+</form>
+
+<form action="{{ url_for('delete', id=questions['id']) }}" method="POST">
+    <div class="form-group">
+        <input type="submit" value="Apagar" class="btn btn-danger btn-sm"
+        onclick="return confirm('Tem certeza que deseja apagar essa sugestão?')">
+    </div>
+</form>
+        
+    </div>
+</div>
+
+
+{% endblock %}

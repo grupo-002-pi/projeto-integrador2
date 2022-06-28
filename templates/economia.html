@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<title>{% block title %} Economia {% endblock %}</title>
+
+<div class="container" >
+    <div class="jumbotron" style="background-color: #E3E3E3; ">
+        <h1 class="display-4">
+            <style>
+                h1{text-align: center;
+                background-color: #E3E3E3;
+                color: #000000;
+                }
+
+            </style>Economia &#128178<i class="fa-regular fa-hand-wave"></i></h1>
+        <p></p>
+        <br>
+        <hr class="my-4">
+        <p style="color: #000000;"> A economia é um ramo de estudo bastante amplo.</p>
+            <p style="color: #000000;">Podemos dizer que a economia é uma ciência, e dentro dela está o estudo de vários fatores, que vai desde atividades econômicas, comportamentos de consumo, até política.</p>
+            <p style="color: #000000;">Todos os acontecimentos que podem influenciar no progresso ou regresso econômico são abrangidos pela economia.</p>
+            <p style="color: #000000;">É muito importante possuirmos uma base de conhecimento econômico, pois esse conhecimento pode nos ajudar a administrar nossas finanças.</p>
+           
+        <br>
+        
+    </div>
+</div>
+
+
+    <div class="row" >
+        
+            <div class="card" style="background-color: #E3E3E3; border: #E3E3E3;" >
+                <div class="card-body" >
+                    <h4 class="card-title">Dica de conteúdo sobre Economia</h4>
+                    <br>
+                    <p class="card-text">Encontramos um conteúdo muito interessante sobre economia</p> 
+                    <p class="card-text">Artigo disponível na plataforma <a href="https://pt.wikipedia.org/" style="font-weight: bold;">Wikipédia(link para site externo)</a></p>
+                    <p class="card-text">Artigo: <a href="https://pt.wikipedia.org/wiki/Economia" style="font-weight: bold;">Economia(link para site externo)</a></p>
+                    <br>
+                </div>
+            </div>
+        </div>
+    <br>
+    <br>
+    <br>
+
+        <div class="row" style="margin-left: 550px;">
+            <div class="card" style="background-color: #E3E3E3; border: #E3E3E3;">
+                <div class="card-body">
+                    <h4 class="card-title">Veja a cotação do dólar neste momento:</h4>
+                    <br>
+                    <p class="card-text">Cotação do dólar (USD) em reais (R$) é: <script src="../static/js/cotacao.js"> </script></p>
+                    <span id="span" style="font-size: 25px; font-weight:bold"><p>R$</p></span>
+                    <script src="../static/js/cotacao.js"> </script>
+                          
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</div>
+<br>
+
+
+
+{% endblock %}
+
+
+
+
+<!--
+
+
+
+<span id="span"></span>
+<script src="../static/js/cotacao.js">    
+</script>
+                
+
+
+-->

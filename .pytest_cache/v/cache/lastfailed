@@ -1,0 +1,16 @@
+{
+  "Lib/site-packages/sqlalchemy/testing/suite/test_cte.py": true,
+  "Lib/site-packages/sqlalchemy/testing/suite/test_ddl.py": true,
+  "Lib/site-packages/sqlalchemy/testing/suite/test_deprecations.py": true,
+  "Lib/site-packages/sqlalchemy/testing/suite/test_dialect.py": true,
+  "Lib/site-packages/sqlalchemy/testing/suite/test_insert.py": true,
+  "Lib/site-packages/sqlalchemy/testing/suite/test_reflection.py": true,
+  "Lib/site-packages/sqlalchemy/testing/suite/test_results.py": true,
+  "Lib/site-packages/sqlalchemy/testing/suite/test_rowcount.py": true,
+  "Lib/site-packages/sqlalchemy/testing/suite/test_select.py": true,
+  "Lib/site-packages/sqlalchemy/testing/suite/test_sequence.py": true,
+  "Lib/site-packages/sqlalchemy/testing/suite/test_types.py": true,
+  "Lib/site-packages/sqlalchemy/testing/suite/test_unicode_ddl.py": true,
+  "Lib/site-packages/sqlalchemy/testing/suite/test_update_delete.py": true,
+  "tests.py::test_home": true
+}

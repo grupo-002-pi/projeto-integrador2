@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<title>{% block title %} Sugestões {% endblock %}</title>
+
+<div class="container" >
+    <div class="jumbotron" style="background-color: #E3E3E3; ">
+        <h1 class="display-4">
+            <style>
+                h1{text-align: center;
+                background-color: #E3E3E3;
+                color: #000000;
+                }
+
+            </style>Sugestões<i class="fa-regular fa-hand-wave"></i></h1>
+        <p></p>
+        <hr class="my-4">
+        <h4 style="color: #000000; text-align:center;">Registre ou edite suas sugestões:</h4>
+        {% for questions in questions %}
+    <a href="{{ url_for('questions', questions_id=questions['id']) }}">
+        <h2>{{ questions['title'] }}</h2>
+    </a>
+     <span class="badge badge-primary">{{ questions['created'] }}</span>
+    <br>
+    <br>
+    <a href="{{ url_for('edit', id = questions['id']) }}">
+        <span class="badge badge-warning">Editar</span>
+    </a>
+    
+</div>
+    <hr>
+    
+{% endfor %}
+<br>
+<br>
+
+<div class="button">
+    <button type="submit" class="btn btn-primary" style="text-decoration:none; margin-left: 330px; border-color: #523817;">
+        <a href="{{url_for('create')}}" >Registre sua sugestão</a>
+    </button>   
+
+</div>
+</body>
+
+{% endblock %}
